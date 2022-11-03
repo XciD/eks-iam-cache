@@ -78,10 +78,10 @@ func main() {
 	cache := cacheFile(args, os.Environ())
 	cached, err := readCache(cache)
 	if err == nil {
-		fmt.Print(cached)
+		//fmt.Print(cached)
 		return
 	}
-	fmt.Fprintln(os.Stderr, err)
+	//fmt.Fprintln(os.Stderr, err)
 
 	token, err := run(args)
 	if err != nil {
@@ -97,7 +97,7 @@ func main() {
 		}
 	}
 
-	fmt.Println(token)
+	//fmt.Println(token)
 	if err := writeCache(cache, token); err != nil {
 		panic(err)
 	}
