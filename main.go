@@ -97,7 +97,7 @@ func main() {
 		}
 	}
 
-	//fmt.Println(token)
+	fmt.Println(token)
 	if err := writeCache(cache, token); err != nil {
 		panic(err)
 	}
