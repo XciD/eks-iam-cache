@@ -78,7 +78,7 @@ func main() {
 	cache := cacheFile(args, os.Environ())
 	cached, err := readCache(cache)
 	if err == nil {
-		//fmt.Print(cached)
+		fmt.Print(cached)
 		return
 	}
 	//fmt.Fprintln(os.Stderr, err)
